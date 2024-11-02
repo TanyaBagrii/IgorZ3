@@ -1,0 +1,429 @@
+/* styles/style.css */
+
+body {
+     font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+	background-image: url('https://learn.logikaschool.com/uploads/student/1430985/671d6a4318d74.png'); /* путь к вашему изображению */
+    background-size: cover; /* Растягивает изображение, чтобы покрыть весь экран */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Запрещает повтор изображения */
+    background-attachment: fixed; /* Фиксирует фон, чтобы он оставался на месте при прокрутке */
+}
+
+header {
+	background-size: cover;
+    background-image: url(https://learn.logikaschool.com/uploads/student/1430985/671d6abf2058b.png);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+header img {
+    height: 200px;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+footer {
+    background-image: url(https://learn.logikaschool.com/uploads/student/1430985/6714b1ced80a4.png);
+    color: #302d41;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.character-card {
+    background-color: #0e267500; /* Темно-синій фон */
+    color: #ffffff; /* Білий текст */
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Тінь для обʼємності */
+}
+
+.character-card h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.character-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.character-info p {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.character-info img {
+    width: 250px;
+    height: auto;
+}
+.KW p{
+    flex: 1;
+    margin-right: 20px;
+    font-size: 25px;
+}
+.KW img{
+    width: 230px;
+    height: auto;
+}
+.KW{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+.igor{
+    width: 1000px;
+    display: flex;
+}
+p{
+	font-weight: 400; /* Обычная толщина шрифта для текста */
+    font-size: 22px; /* Размер текста */
+    line-height: 1.3; /* Межстрочное расстояние для удобства чтения */
+}
+p:hover{
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.726);
+}
+.VOIDHEART:hover{
+    box-shadow: 10px 10px 10px 10px rgb(12, 40, 100)
+}
+.MAIN {
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+}
+.MAIN span {
+	transition: all 0.3s;
+}
+.MAIN::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.MAIN:hover span {
+	letter-spacing: 2px;
+}
+.MAIN:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.MAIN::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255, 255, 255, 0);
+}
+.MAIN:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+.CHARA {
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+}
+.CHARA span {
+	transition: all 0.3s;
+}
+.CHARA::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.CHARA:hover span {
+	letter-spacing: 2px;
+}
+.CHARA:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.CHARA::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255, 255, 255, 0);
+}
+.CHARA:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+.CONTACTS {
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+}
+.CONTACTS span {
+	transition: all 0.3s;
+}
+.CONTACTS::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.CONTACTS:hover span {
+	letter-spacing: 2px;
+}
+.CONTACTS:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.CONTACTS::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255, 255, 255, 0);
+}
+.CONTACTS:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+.dialogue1{
+	width: 500px;
+	height: auto;
+}
+.dialogue2{
+	width: 300px;
+	height: auto;
+}
+.perehod{
+	width: 500px;
+	height: auto;
+	vertical-align: middle;
+}
+.logo{
+	height: 170px;
+}
+.HOLLOWKNIGHT{
+	width: 800px;
+}
+.HOLLOWKNIGHT:hover{
+	box-shadow: 10px 5px 5px 10px rgba(25, 34, 71, 0.699)
+}
+.HBV{
+	width: 900px;
+}
+.HBV:hover{
+	box-shadow: 10px 5px 5px 10px rgba(25, 34, 71, 0.699)
+}
+.hollowpage {
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+	font-size: 25px;
+	text-decoration: none;
+}
+.hollowpage span {
+	transition: all 0.3s;
+}
+.hollowpage::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.hollowpage:hover span {
+	letter-spacing: 2px;
+}
+.hollowpage:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.hollowpage::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255, 255, 255, 0);
+}
+.hollowpage:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+
+.homepage {
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+	font-size: 25px;
+	text-decoration: none;
+}
+.homepage span {
+	transition: all 0.3s;
+}
+.homepage::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.homepage:hover span {
+	letter-spacing: 2px;
+}
+.homepage:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.homepage::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255, 255, 255, 0);
+}
+.homepage:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+.LEDI{
+	width: 400px;
+	float: left;
+}
+.KING{
+	width: 180px;
+}
+.hornetart{
+	width: 500px;
+}
+.quirrelart{
+	width: 473px;
+	float: right;
+}
+iframe{
+	display: block;
+	position: relative;
+	left: 85px;
+}
+.battle2{
+	float: left;
+}
+.video-container{
+	display: flex;
+    gap: 30px;
+}
